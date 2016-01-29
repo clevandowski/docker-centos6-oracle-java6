@@ -15,7 +15,7 @@ RUN wget --no-cookies \
 
 RUN chmod a+x /tmp/jdk-$JAVA_VERSION-linux-x64-rpm.bin
 RUN /tmp/jdk-$JAVA_VERSION-linux-x64-rpm.bin
-RUN rm /tmp/jdk-$JAVA_VERSION-linux-x64.rpm.bin
+RUN rm /tmp/jdk-$JAVA_VERSION-linux-x64-rpm.bin
 RUN yum -y localinstall /jdk-$JAVA_VERSION-linux-amd64.rpm
 RUN rm /jdk-$JAVA_VERSION-linux-amd64.rpm
 RUN yum clean all
